@@ -1,0 +1,177 @@
+/* Шапка */
+header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(71, 35, 68);
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-sizing: border-box;
+    color: rgb(176, 204, 178);
+}
+
+/* Логотип */
+#logo {
+    max-width: 70px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+/* Текст в шапке */
+#header-text {
+    flex-grow: 1;
+}
+
+#header-text h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#header-text h1 a:hover {
+    color: inherit;
+}
+
+/* Футер */
+footer {
+    background: rgb(71, 35, 68);
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-sizing: border-box;
+}
+
+footer p {
+    color: #ccc;
+}
+
+.content {
+    width: 100%;
+    padding-left: 10px;
+    background: rgb(218, 218, 218);
+    box-sizing: border-box;
+    padding: 10px;
+    padding-left: 15px;
+}
+
+nav {
+    background: rgb(71, 35, 68);
+    text-align: center;
+    position: relative;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 15px;
+    margin: 5px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(176, 204, 178);
+    font-weight: bold;
+    padding: 10px 15px; 
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: #fff; 
+    background-color: #000000a1; 
+}
+body{
+    height: 100rem;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-out;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+form h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #888;
+}
+
+form h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #444;
+}
+
+form input[type="text"],
+form input[type="password"],
+form textarea,
+form input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+button {
+    width: 90%;
+    padding: 10px;
+    background-color: #e60000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+
+
+ a{
+    cursor: pointer;
+ }
